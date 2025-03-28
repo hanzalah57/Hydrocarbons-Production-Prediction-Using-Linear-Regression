@@ -22,7 +22,7 @@ st.markdown(
 page = st.sidebar.selectbox("Choose a section", ["Data Overview", "Prediction"])
 
 # Load Data
-df = pd.read_excel('Production_Data.xlsx')
+df = pd.read_csv('Production_Data.csv')
 
 if page == "Data Overview":
     st.write("### Data Preview")
